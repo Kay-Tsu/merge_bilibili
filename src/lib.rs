@@ -90,8 +90,8 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
             // 合并文件
             // ffmpeg -i video.m4s -i audio.m4s -c:v copy -c:a aac -strict experimental output.mp4
             let command = String::from("ffmpeg -i ") + audio_video.video.as_str()
-             + " -i " + audio_video.audio.as_str() + " -c:v copy -c:a aac -strict experimental "
-            + config.out_path.as_str() + "/" + audio_video.out_file.as_str() + ".mp4";
+                + " -i " + audio_video.audio.as_str() + " -c:v copy -c:a aac -strict experimental "
+                + config.out_path.as_str() + "/" + audio_video.out_file.as_str() + ".mp4";
             exec(command.as_ref());
         }
     }
