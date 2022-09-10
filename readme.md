@@ -1,4 +1,4 @@
-用ffmpeg命令行合并B占下载的视频
+用ffmpeg命令行合并B站下载的视频
 
 用法
 cargo run in_path out_path
